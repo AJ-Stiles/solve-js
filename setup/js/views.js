@@ -1,9 +1,8 @@
-import { JsLoadRouter } from './router.js';
+import { JsLoadRouter } from './jsload.js';
 
-export const LoadView = (htmlUrl) => {
+export const LoadView = (htmlUrl, title) => {
     let previousMain = document.querySelector('#root > main');
-    let h1 = document.querySelector('#h1');
-
+    
     fetch(htmlUrl /*, options */)
     .then((response) => { return response.text() })
     .then((htmlText) => {
@@ -14,7 +13,7 @@ export const LoadView = (htmlUrl) => {
             let fetchedMain = doc.body.querySelector('main');
             previousMain.parentNode.replaceChild(fetchedMain, previousMain);
             //Load JsRouter
-            JsLoadRouter(h1);
+            JsLoadRouter(title);
         }
         stringToHTML(htmlText);
     })

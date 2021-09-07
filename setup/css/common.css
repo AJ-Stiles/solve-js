@@ -2,11 +2,13 @@
 @font-face {
     font-family: 'Amita';
     src: url('../fonts/Amita/Amita-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-display: swap;
 }
 
 body {
@@ -28,13 +30,16 @@ body a {
    display: block;
 }
 
-div#root > main,
-body > article  {
-    height: calc(100vh - var(--header-sm));
+body a:hover, 
+body a:focus {
+     transition: color 0.2s linear,
+                 border 0.17s linear;
 }
 
+body > article,
 div#root > main {
-    height: calc(100vh - var(--header-sm));
+    min-height: calc(100vh - var(--header-sm));
+    height: unset;
 }
 
 
@@ -47,9 +52,9 @@ media-queries
         height: var(--header-lg);
     }
 
-    div#root > main,
-    body > article  {
-        height: calc(100vh - var(--header-lg));
+    body > article, 
+    div#root > main {
+        min-height: calc(100vh - var(--header-lg));
     }
 }
 
@@ -64,8 +69,8 @@ media-queries
         height: var(--header-sm);
     }
 
-    div#root > main,
-    body > article  {
-        height: calc(100vh - var(--header-sm));
+    body > article, 
+    div#root > main {
+        min-height: calc(100vh - var(--header-sm));
     }
 }

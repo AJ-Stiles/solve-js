@@ -1,0 +1,153 @@
+
+div#root > main {
+    background: white;
+    border: 2px solid var(--greyLight);
+}
+
+section {
+    width: unset;
+    max-width: 95%;
+}
+
+section > div {
+    display: flex;
+}
+
+section > div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+}
+
+section > div:nth-child(2) > * {
+    /* 
+    display: flex; 
+    adding this here makes it
+    impossible to manipulate
+    for learners working on
+    the task.
+    You have to use the .flex 
+    class inline instead to 
+    solve this issue or manipulate 
+    with js in styles.js
+    */
+    align-items: center;
+    width: 150px;
+    margin: 20px 0 0 0;
+}
+
+section > div:nth-child(2) > * > span {
+    font-weight: bold;
+}
+
+section > div:nth-child(2) > * > span:nth-child(1) {
+    /*display: flex; in styles.js*/
+    align-items: center;
+    justify-content: center;
+    background: #e9480d;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    font-size: 2em;
+    color: white;
+    box-shadow: 1px 1px 5px #c5c5c5;
+}
+
+section > div:nth-child(2) > * > span:nth-child(2) {
+    /*display: block; in styles.js*/
+    height: max-content;
+    margin: 0 20px 0 10px;
+    font-size: 1.2em;
+    color: #e9480d;
+}
+
+section > div:nth-child(2) > div:nth-child(3) > span:nth-child(1),
+section > div:nth-child(2) > div:nth-child(7) > span:nth-child(1) {
+    background: teal;
+}
+
+section > div:nth-child(2) > div:nth-child(4) > span:nth-child(1),
+section > div:nth-child(2) > div:nth-child(6) > span:nth-child(1) {
+    background: yellow;
+    color: var(--textColor);
+}
+
+section > div:nth-child(2) > div:nth-child(3) > span:nth-child(2),
+section > div:nth-child(2) > div:nth-child(7) > span:nth-child(2) {
+    color: teal;
+}
+
+section > div:nth-child(2) > div:nth-child(4) > span:nth-child(2),
+section > div:nth-child(2) > div:nth-child(6) > span:nth-child(2) {
+    color: var(--textColor);
+}
+
+button {
+    width: unset;
+    font-size: unset;
+    font-weight: normal;
+    margin: 0 5px 0 0;
+    padding: 8px 10px;
+    border: 3px solid transparent;
+}
+
+button:not(button:nth-of-type(1)) {
+    background: var(--textColor);
+}
+
+button > span {
+    font-size: 1em;
+}
+
+button:nth-child(1) {
+    margin: 0 5px 0 auto;
+}
+
+button:nth-child(2):hover, button:nth-child(2):focus {
+    color: var(--btnRed);
+    border-bottom: 3px solid var(--btnRed);
+}
+
+button:nth-child(3):hover, button:nth-child(3):focus {
+    border-bottom: 3px solid var(--btnYellow);
+    color: var(--btnYellow);
+}
+
+button:nth-last-child(1):hover, button:nth-last-child(1):focus {
+    border-bottom: 3px solid var(--btnGreen);
+    color: var(--btnGreen);
+}
+
+button > span {
+    font-size: 1em;
+}
+
+button > span:nth-last-child(1) {
+    display: none;
+}
+
+@media screen and (min-width: 370px) {
+    button {
+        padding: 10px 15px;
+    }
+
+    button > span {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    button > span:nth-last-child(1) {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1010px) {
+    section {
+        max-width: 900px;
+    }
+
+    button:nth-last-child(1) {
+        margin: 0;
+    }
+}

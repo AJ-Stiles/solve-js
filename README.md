@@ -2,7 +2,9 @@
 |<img width="1101" alt="solvejs-image" src="https://user-images.githubusercontent.com/45185388/131930669-dd2829c1-a4e4-4154-b8e2-e5e7c03321e8.png">|
 |--|
 
-Solve js is a client-only single page application containing vanilla javascript tasks. The tasks are based on features generally found in web applications. Just run the application (the index.html file) like you would run any html project in the browser. Readme is divided into the following sections:
+> To work on solve js tasks, just run the application on your local computer like you would run any html project e.g. with VScode live server (extension). Work is still going on to make the solve js project suitable for production.
+
+Solve js is a client-only single page application made by [@Ifycode](https://github.com/Ifycode) containing vanilla javascript tasks. The tasks are based on features generally found in web applications. Readme is divided into the following sections:
 - [Task instructions](#task-instructions)
 - [Setup instructions](#setup-instructions)
 - [Check that setup is successful](#check-that-setup-is-successful)
@@ -48,12 +50,6 @@ To check that the change of remote origin to your own repo is successful, try to
 git push origin main
 ````
 
-<!--
-````
-git push -u origin main
-````
--->
-
 Go back to the solve-js repo you created in your own github account. You should be able to see the content on your local computer now also exist in there too.
 
 ## Branching instructions
@@ -88,22 +84,6 @@ git commit -m "Write your commit message here"
 ````
 git push origin solve-tasks
 ````
-
-<!--
-* Use this the first time you push:
-````
-git push -u origin solve-tasks
-````
-* Use this every other time (which ever works for you):
-````
-git push
-````
-&nbsp;&nbsp;&nbsp; or
-
-````
-git push origin solve-tasks
-````
--->
 
 ## How to submit
 Follow the steps in **commiting and pushing your changes** section, and submit the link to your **solve-js** repo.
@@ -144,10 +124,15 @@ git merge main
 
 ## Task 1: Toggle task
 
-Find files to work with in the `toggle` folder inside the `solve` folder. Make the button toggle the div on and off like a switch, as shown in the .gif image below.
+Find files to work with in the `toggle` folder which is inside the `solve` folder. Make the button toggle the div on and off like a switch, as shown in the .gif image below.
 
 |![solvejs-toggle](https://user-images.githubusercontent.com/45185388/131866859-adb49d23-710b-4d89-a602-e146273fd785.gif)|
 |--|
 
 ## Task 2: Filter task
-Filter and all other tasks coming soon
+Find files to work with in the `filter` folder which is inside the `solve` folder. Filter content based on colors as shown in the .gif image below. <!-- Display all content when the "All Colors" button is clicked on, and only display a specific color -->
+
+|![solvejs-filter](https://user-images.githubusercontent.com/45185388/132273158-c074ff67-ba31-41fe-a982-acf1f71ae5a3.gif)|
+|--|
+
+

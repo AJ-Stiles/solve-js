@@ -11,12 +11,13 @@ body > header a {
    display: none;
 }
 
-body > article {
-    display: flex;
+body > article { /* ONE */
+    /*display: flex;*/
     flex-direction: column;
 }
 
 body > article a{
+    display: none; /* TWO */
     width: 85%;
     margin: 0 auto;
     border: 2px solid transparent;
@@ -32,7 +33,7 @@ body > article a:hover,
 body > article a:focus {
     outline: none;
     border-bottom: 2px solid var(--themeColor);
-    color: rgb(240, 64, 0);
+    color: #f04000;
     box-shadow: 5px 5px 10px rgb(230, 230, 230);
 }
 

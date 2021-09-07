@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Solve js client-only single page application made by Obiagba Mary containing vanilla javascript tasks">
+    <title></title><!-- manipulated with javascript -->
     <link rel="stylesheet" href="./setup/css/styles.css">
-    <!-- manipulate with javascript -->
-    <link rel="stylesheet" href="./setup/css/js/home.css">
+    <!-- manipulated with javascript -->
+    <link rel="stylesheet" href="./setup/css/js/home.css" id="link">
+    <link rel="stylesheet" href="" id="linkExtension">
     <link rel="stylesheet" href="./setup/home/home.css" id="viewsLink">
-
 </head>
 <body>
 
     <header>
         <h1 id="h1" class="page-title"></h1>
-        <a id="homeBtn" href="./index.html">All Tasks</a>
+        <a route="Solve js" id="homeBtn" href="./index.html">All Tasks</a>
     </header>
 
     <article>
-        <a id="toggleBtn" href="./solve/toggle/toggle.html">Task 1: Toggle Task</a>
-        <a id="filterBtn" href="./solve/filter/filter.html">Task 2: Filter Task</a>
-        <a href="./index.html">More tasks coming...</a>
+        <a href="https://github.com/gads-projects/solve-js" target="_blank">Readme Instructions</a>
+        <a route="Toggle Task" href="./index.html">Task 1: Toggle Task</a>
+        <a route="Filter Task" href="./index.html">Task 2: Filter Task</a>
+        <a route="Fetch Task" href="./index.html">Task 3: Fetch Task</a>
+        <a route="Solve js" href="./index.html">More tasks coming...</a>
     </article>
 
     <div id="root">
-       <main></main><!--attach Id attribute with javascript to prevent some one changing by mistake?-->
+       <main></main><!-- manipulated with javascript -->
     </div>
 
     <script type="module" src="./setup/js/app.js"></script>

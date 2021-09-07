@@ -3,10 +3,15 @@
     /* colors */
     --themeColor: orangered;
     --textColor: #292929;
+    --greyLight: rgba(240, 240, 240, 0.7);
+    --btnRed: #ff7c4d;
+    --btnYellow: #f5f512;
+    --btnGreen: #00d5d5;
 
     /* height */
     --header-sm: 120px;
     --header-lg: 170px;
+
 
 
 }

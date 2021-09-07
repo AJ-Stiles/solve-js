@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.font-transition {
+    transition: font-size 0.06s linear;
+}
