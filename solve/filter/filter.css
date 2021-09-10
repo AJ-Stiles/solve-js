@@ -1,2 +1,10 @@
 
 /* Add any relevant style here */
+
+.box {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
